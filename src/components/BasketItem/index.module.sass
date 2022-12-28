@@ -1,0 +1,30 @@
+.basket_item
+    height: 100px
+    display: grid
+    grid-template-columns: 10% 40% 30% 25%
+    display: flex
+    align-items: center
+    gap: 30px
+    padding: 0 10px
+    font-size: 20px
+    margin-bottom: 30px
+    &>img
+        height: 100%
+        width: 80px
+        object-fit: container
+        border-radius: 15px
+    &>.container_change_count
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        gap: 10px
+        &>.btn_delete
+            display: none
+        &:hover>.btn_delete
+            display: block
+        &>.container_count
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 20px
